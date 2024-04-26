@@ -1,0 +1,31 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.background {
+  /* background-image: url("https://img.freepik.com/vecteurs-libre/fond-monochrome-blanc-degrade_23-2148996240.jpg?t=st=1713445072~exp=1713448672~hmac=ef91509610d36ae1985548ab5e090f3224764e645eaa2f4d525b57423a54b24f&w=740"); */
+   /* background-image: url("https://img.freepik.com/vecteurs-libre/mosaique-motifs-fond_53876-91675.jpg?t=st=1713869447~exp=1713873047~hmac=4133f025e865afaabbcb56334ce6f02de4b5fbc308d488eda8770e9730ecfd38&w=740") ; */
+  background-image: url("https://img.freepik.com/vecteurs-libre/fond-forme-mosaique-geometrique_1409-1904.jpg?w=900&t=st=1713869580~exp=1713870180~hmac=045cc3c6e3c17bce5cc83d7c3174704c42caab7778bc903307c876e09c4453d3");
+   
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
