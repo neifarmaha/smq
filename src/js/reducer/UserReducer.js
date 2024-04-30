@@ -28,6 +28,7 @@ const UserReducer = (state = initialState, { type, payload }) => {
         isAuth: true,
         token: payload.jwt,
         user: payload.user,
+        authUser: payload.user,
       };
     case LOGIN_FAIL:
       return {
