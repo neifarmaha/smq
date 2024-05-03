@@ -4,6 +4,7 @@ import { Link, useParams } from "react-router-dom";
 import { getDocuments } from "../js/actions/documentActions";
 import { useDispatch, useSelector } from "react-redux";
 import { serverURL } from "../utils/endpoints";
+import { getUser } from "../js/actions/userActions";
 
 const DocumentList = () => {
   const params = useParams();
@@ -20,7 +21,11 @@ const DocumentList = () => {
       .flatMap((el) => el)
   );
   console.log(localStorage.getItem("userId"));
-  console.log("connected user department", authUser.department);
+  // console.log("connected user department", authUser.department);
+
+  useEffect(() => {
+    dispatch(getUser(localStorage.getItem("userId")));
+  }, []);
 
   useEffect(() => {
     console.log("params changed", documents);

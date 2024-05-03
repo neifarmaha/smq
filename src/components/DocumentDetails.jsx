@@ -35,6 +35,7 @@ const DocumentDetails = () => {
         className="text-blue-800 underline underline-offset-1 font-semibold text-[18px]"
         href={`${serverURL}${doc?.file?.data?.attributes?.url}`}
         target="_blank"
+        rel="noreferrer"
       >
         {doc?.Title}
       </a>
